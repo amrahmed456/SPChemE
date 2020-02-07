@@ -1,0 +1,266 @@
+body{
+	background-color:#f7f8fa;
+	overflow-x:hidden
+}
+/* start main section */
+.main{
+	background:url("../imgs/young-people-event.jpg") no-repeat center center fixed;
+	background-size:cover
+}
+.main .overlay{
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: linear-gradient(90deg , #169591d6, #635397c7);
+}
+.main .top-logo{
+	width:120px
+}
+.main .container{color:#FFF}
+/* end main section */
+
+/* start real statistic section */
+
+.statis .real{
+	margin-top: -50px;
+background:#FFF;
+z-index: 10;
+position: relative;
+border-radius: 3px;
+box-shadow: 1px 15px 25px #DDD;
+padding:35px 0px
+}
+.statis .real .my-stat{
+	margin-bottom:15px
+}
+.statis .talk{
+	padding-left: 0px !important;
+}
+.statis .real p{
+	margin: 0px;
+color:gray;
+font-size: 15px;
+}
+.statis .real .head-stat{
+	margin-bottom: 0px;
+	color:#000;
+margin-top: 7px;
+font-size: 17px;
+text-transform: uppercase;
+}
+.statis img{
+		display: block;
+margin: auto;
+	}
+@media (max-width:484px){
+	.main h1{font-size:25px}
+	.main .email_subscribe .sub-button{
+		padding: 10px 11px;
+	}
+	.main .email_subscribe input{
+		padding-right:100px
+	}
+	.statis .real{
+		margin-top: -30px;
+	}
+	.main .top-logo{width:60px}
+}
+/* end real statistic section */
+/* start events section */
+.prev-events {background:#F5F5F5}
+.prev-events ul{
+	display:flex;
+	justify-content:center;
+	margin-bottom:50px;
+	flex-wrap: wrap;
+}
+.prev-events ul li{
+	color:white;
+padding: 9px 18px;
+border-radius: 25px;
+font-size:14px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+margin-bottom:5px;
+border:2px solid transparent;
+margin-right:7px
+}
+.prev-events ul li.active{
+	padding:9px 50px;
+	border:2px solid #00adf6;
+	color:#00adf6;
+	background:transparent !important
+}
+.prev-events ul li:hover{
+	padding:9px 35px
+}
+.prev-events ul li:nth-of-type(1){background-color:#1945AC}
+.prev-events ul li:nth-of-type(2){background-color:#EE3C40}
+.prev-events ul li:nth-of-type(3){background-color:#B71317}
+.prev-events ul li:nth-of-type(4){background-color:#1C95D0}
+.prev-events ul li:nth-of-type(5){background-color:#11A41A}
+.prev-events ul li:nth-of-type(6){background-color:#656665}
+.prev-events ul li:nth-of-type(7){background-color:#b90f9e}
+.prev-events ul li:nth-of-type(8){background-color:#cab50c}
+.event-name{
+	color:#575757
+}
+
+.ribbon{
+position: absolute;
+left: -5px;
+top: -5px;
+z-index: 1;
+overflow: hidden;
+width: 75px;
+height: 75px;
+}
+.ribbon span{
+	font-size: 14px;
+	background: #f60;
+	color: #fff;
+text-align: center;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+width: 100px;
+display: block;
+box-shadow: 0 3px 10px -5px #000;
+position: absolute;
+top: 19px;
+left: -21px;
+font-weight: 700;
+line-height: 20px;
+}
+.ribbon span.runs{
+	background: linear-gradient(#EE3C40 0%,#b71317 100%);
+}
+.ribbon span.upcom{
+	background: linear-gradient(#1C95D0 0%,#046a95 100%);
+}
+
+.ribbon span::before{
+	content: '';
+position: absolute;
+left: 0;
+top: 100%;
+z-index: -1;
+border-left: 3px solid #b71317;
+border-right: 3px solid transparent;
+border-bottom: 3px solid transparent;
+border-top: 3px solid #b71317;
+}
+.ribbon span::after{
+content: '';
+position: absolute;
+right: 0%;
+top: 100%;
+z-index: -1;
+border-right: 3px solid
+#ff4136;
+border-left: 3px solid
+transparent;
+border-bottom: 3px solid
+transparent;
+border-top: 3px solid
+#ff4136;
+}
+.ribbon span.upcom::before{
+	border-left: 3px solid #0872a0;
+	border-top: 3px solid #0872a0;
+}
+
+.ribbon span.upcom::after{
+	border-right: 3px solid #0872a0;
+	border-top: 3px solid #0872a0;
+}
+
+.mixes .mix img{
+height:240px		
+}
+
+.mixes .mix .details-talk{
+	width: 100%;
+height: 90px;
+word-break: break-word;
+text-overflow: initial;
+overflow: hidden;
+color:#808080;
+}
+.mix .event-details{
+	background-color:#FFF;
+padding: 15px 20px;
+}
+.event-cnt .top-photo{overflow:hidden}
+.event-cnt .top-photo img{transition:.5s;transform:scale(1)}
+.event-cnt{transition:.5s}
+.event-cnt:hover{box-shadow: 7px 7px 20px #D9D9D9;}
+.event-cnt:hover .top-photo img{transform:scale(1.1)}
+.category-event{
+	z-index: 9;
+	top: 25px;
+right: 1px;
+background:rgba(0, 173, 246, 0.8);
+color:white;
+padding: 3px 26px;
+font-weight: bold;
+box-shadow: 0px 3px #0082b9;
+}
+.category-event span::before{
+	content:" ";
+	position:absolute;
+	width:0px;
+	height:0px;
+	right:-22px;
+	top:28px;
+	border-top: 15px solid transparent;
+	border-left:15px solid #00adf6;
+	transform: rotate(90deg);
+}
+/* end events section */
+
+/* start testmonials section */
+.testmonials{
+	background:url("../imgs/young-people-event.jpg") no-repeat center center fixed;
+	background-size:cover
+}
+.testmonials .overlay{
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: rgba(0 , 0, 0 , 0.5);
+}
+.testmonials .my-carousel{
+	background:rgba(0,0,0,.8);
+	color:#FFF;
+	width:100%
+}
+.custom-nav{
+width: 100%;
+bottom: -34px;
+}
+.custom-nav .nav-img img{
+	width: 80px;
+height: 80px;
+border-radius: 50%;
+border: 1px solid #FFF;
+cursor: pointer;
+transition: .3s;
+margin-left: -33px;
+padding:1px
+}
+.custom-nav .nav-img img:hover{
+	border:3px solid #FFF
+}
+.custom-nav .nav-img img.active{
+	border: 5px solid #00ADF6;
+transform: scale(1.2);
+box-shadow: 2px 4px 12px #4a4949;
+}
+/* end testmonials section */

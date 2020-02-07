@@ -1,0 +1,284 @@
+
+body{
+	background-color:#eeeeee
+}
+.head-text{
+	margin-bottom:70px
+}
+.borded{position:relative}
+.borded::before{
+	content: " ";
+position: absolute;
+width: 120px;
+height: 2px;
+background: #B5B5B5;
+bottom: -6px;
+}
+
+/* start main section */
+.main{
+	background-color:#00adf6;
+	transition:.4s
+}
+.main .row{
+	margin-right: 0px;
+margin-left: 0px;
+}
+.main .row .main-no-padding{padding-left: 0px;padding-right: 0px;}
+.main .hero{
+	background:white
+}
+.main .top-welcome img{
+	width:140px
+}
+.main .top-welcome h2,.main .top-welcome p{color:#717171}
+.main .leave-main{
+		animation: fullwidth-header-bounce 2.2s ease-out infinite;
+	background: #00adf6;
+color: #fff;
+border-radius: 50%;
+margin-top: 3rem !important;
+width: 60px;
+height: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor:pointer
+}
+.main .what-we-do{overflow:hidden;color:white}
+.main .what-we-do .circle{
+	width: 350px;
+height: 350px;
+overflow: hidden;
+border-radius: 50%;
+background: white;
+margin:auto;
+margin-bottom:30px
+}
+
+.main .circle img{
+	width:80%;
+}
+.main .owl-theme .owl-dots .owl-dot span{
+	width:12px;
+	height:12px;
+	background:white;
+}
+.main .owl-theme .owl-dots .owl-dot.active span{
+	border:2px solid #FFF;
+	background:transparent
+}
+/* end main section */
+
+/* start committies section */
+.committies .committe{
+	padding: 15px;
+	color: white;
+	background:#757575;
+	border-bottom: 5px solid #4a4a4a;
+}
+.committies .committe .illustration {
+padding: 15px;
+color: white;
+}
+.committies .committe .illustration img{
+	width:90px;
+	height: 80px;
+}
+.committies .it-com{
+	background:#ced491;
+	border-color:#9aa24f
+}
+.committies .oc-com{
+	background:#218dbb;
+	border-color:#024764
+}
+.committies .media-com{
+	background:#12bf9c;
+	border-color:#08997c
+}
+.committies .fr-com{
+	background:#67c0d5;
+	border-color:#197d95
+}
+.committies .hr-com{
+	background:#00549f;
+	border-color:#013044
+}
+.committies .pr-com{
+	background:#605599;
+	border-color:#3b2f79
+}
+.committies .social-com{
+	background:#e38686;
+	border-color:#8e3838
+}
+.committies .dp-com{
+	background:#8e8e8e;
+}
+
+/* end committies section */
+
+
+/* start events section */
+.events{
+	background:white
+}
+.events .row{margin-right: 0px;}
+.events .event{
+	border: 1px solid #ECECEC;
+	border-radius:4px;
+	overflow:hidden
+}
+.events .event img{
+	height: 200px;
+}
+.events .event .event-info{
+	padding:15px
+}
+.events .event .event-info .event-name{
+	font-size: 22px;
+color: #444;
+}
+.events .event .event-info .event-talk{color:grey;height: 70px;overflow: hidden;word-break: break-all;}
+.events .event .event-info .further-details{color: #959595;}
+.events .event .event-info .read{font-size: 14px;color: #0a97d2;}
+
+
+/* end  events section */
+
+/* start magazines section */
+.magazines{
+	direction:rtl;
+	background:url("../imgs/magazines.jpg") no-repeat center center fixed;
+	background-size:cover
+}
+.magazines h1{color:#FFF}
+.magazines .magazine{height:380px;box-shadow:3px 4px 12px black;transition:.4s}
+.magazines .magazine:hover .overlay{
+	background:linear-gradient(0deg , rgb(0, 0, 0) , rgba(0, 0, 0, .5));
+}
+.magazines .magazine .event-img{height:100%}
+.magazines .magazine img{height:100%}
+.magazines .overlay {
+	top:0px;
+	width:100%;
+	height:100%;
+	background:linear-gradient(0deg , rgb(0, 0, 0) , rgba(0, 0, 0, 0));
+	color: white;
+	padding: 15px;
+}
+.magazines .overlay .magazine-talk{
+	color: #e8e8e8;
+	height:75px;
+	overflow:hidden;
+	word-break:break-word
+}
+
+/* end magazines section */
+
+@media(max-width:484px){
+	.main .what-we-do .circle{
+		width:200px;
+		height:200px
+	}
+	.borded {
+		text-align:left !important
+	}
+	.events .borded{text-align:center !important}
+}
+
+/* start best-members section */
+.best-members .best-member img{
+width: 100%;
+height: 230px;
+}
+.best-members .best-name{
+	font-size: 25px;
+text-transform: uppercase;
+color: #efc75e;
+margin-bottom: 0rem;
+}
+.best-members .best-com{
+	text-transform: uppercase;
+color: gray;
+}
+.best-members .medal img{
+width: 40px;
+height: 48px;
+margin-top: 10px;
+float: right;
+}
+
+/* end best-members section */
+
+
+/* start presidents section */
+.presidents{
+	background: #262123;
+}
+.presidents .head-text{color:#a4a4a4}
+.presidents h1{color:white}
+
+.presidents .presidental{
+	position:relative;
+	height:350px;
+	border-radius:5px;
+	border:5px solid white
+}
+.presidents .col-12:nth-of-type(1) .presidental{background:url("../imgs/mag1.jpg") no-repeat center center;background-size:cover;}
+
+.presidents .col-12:nth-of-type(2) .presidental{background:url("../imgs/mag2.jpg") no-repeat center center;background-size:cover;}
+.presidents .col-12:nth-of-type(3) .presidental{background:#FFF;padding:100px 7px}
+.presidents .col-12:nth-of-type(3) .presidental h2{margin-bottom:7px}
+
+.presidents .presidental .overlay{
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	background:linear-gradient(180deg , rgba(0,0,0,0) , rgba(0,0,0,.6));
+	color:white;
+	padding:12px;
+}
+
+.presidents .presidental .overlay p{
+	font-style:italic;
+	background:white;
+	color:black;
+	text-align:center;
+	margin-top:-10px
+}
+
+.presidents .presidental .special-over h2{color:black}
+.presidents .presidental .special-over p{font-style:normal;background:none}
+
+/* end presidents section */
+
+
+/* start visit-us section */
+.visit-us{
+	background:#333;
+	background-size:cover;
+	color:white
+}
+.visit-us .contact-icons a{
+	color:white
+}
+.visit-us .contact-icons .icon-container{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	transition:.4s
+}
+.visit-us .contact-icons .icon-container:hover{
+	transform:scale(1.2)
+}
+.visit-us .contact-icons .btn{padding: 0.575rem .5rem;}
+.visit-us .contact-icons .icon-facebook{background-color:#475993}
+.visit-us .contact-icons .icon-twitter{background-color:#55acee}
+.visit-us .contact-icons .icon-linkedin{background-color:#007fb5}
+.visit-us .contact-icons .icon-whats{background-color:#56d470}
+
+/* end visit-us section */

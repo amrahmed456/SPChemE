@@ -1,0 +1,78 @@
+.teamer{
+padding: 30px 10px;
+background:#F9F9F9;
+border: 1px solid #F0F0F0;
+}
+.teamer .team-img img{
+	width: 220px;
+height: 220px;
+border-radius: 110px;
+border: 1px solid #C6C6C6;
+box-shadow: 8px 9px 20px #DDD;
+}
+.teamer .position{
+	text-transform: uppercase;
+}
+.teamer .position-details{
+	font-size: 16px;
+	color:#797979;
+	font-weight: 500;
+}
+.show-details{
+display: inline;
+padding: 7px 14px;
+color:#000;
+font-weight: 400;
+cursor: pointer;
+background:#EEE;
+font-size: 12px;
+transition:.3s
+}
+.show-details:hover{
+	background:#DFDFDF
+}
+.user-details .active-show{
+	color:#000;
+	background:#DDD;
+}
+.center-president{
+margin-top: -25px;
+background:#2B2326;
+border: none;
+color:#FFF;
+box-shadow:4px 4px 32px #9B9B9B
+}
+.center-president .team-img img{box-shadow:8px 9px 20px #151515}
+@media (max-width:600px){
+	.center-president{margin-top: 0px;}
+}
+
+.highboard{background:#e8e8e8}
+.member{
+	background:#EEE;
+padding: 25px 0px;
+transition:.4s
+}
+.member-img{
+	width: 255px;
+height: 255px;
+border-radius: 50%;
+transition:.4s
+}
+.member-name{
+	font-size:20px
+}
+.member-position{
+	font-weight: 300;
+	color:#333;
+}
+.member:hover{
+	background:#FFF;
+	box-shadow: 4px 4px 20px #DDD;
+}
+.member:hover img{
+	transform:scale(1.05);
+	box-shadow: 6px 6px 25px #C8C8C8;
+}
+.board{background:#FFF;border-bottom:1px solid #ECECEC}
+.board .member{background:#FFF}
